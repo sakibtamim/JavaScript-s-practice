@@ -1,0 +1,71 @@
+/* marksheet */
+.marksheet {
+  width: 400px;
+  padding-bottom: 20px;
+}
+.grade_output {
+  color: red;
+}
+
+/* marksheet */
+
+/* multiplication table */
+.multiplication_table {
+  height: auto;
+  width: 400px;
+  margin-bottom: 20px;
+}
+.multi_output {
+  margin-top: 10px;
+  height: 180px;
+  width: 60%;
+}
+/* multiplication table */
+
+/* number guessing */
+.numberGuessing {
+  padding-bottom: 20px;
+}
+.playerOneOutput,
+.playerTwoOutput {
+  color: red;
+}
+.playerTwo {
+  display: none;
+}
+/* number guessing */
+
+/* counter */
+.counter_main {
+  display: flex;
+  gap: 10px;
+}
+.counter {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  line-height: 100px;
+}
+/* counter */
+
+/* count down timer */
+.countdownmain {
+  display: flex;
+  gap: 10px;
+}
+.day,
+.hour,
+.min,
+.sec {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  line-height: 100px;
+}
+/* count down timer */
