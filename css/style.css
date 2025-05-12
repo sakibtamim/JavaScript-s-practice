@@ -69,3 +69,17 @@
   line-height: 100px;
 }
 /* count down timer */
+
+/* type writter */
+.type {
+  height: 50px;
+  font-size: 40px;
+  text-transform: uppercase;
+  position: relative;
+}
+.type::after {
+  position: absolute;
+  content: " |";
+  top: -4px;
+}
+/* type writter */

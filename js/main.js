@@ -1,3 +1,12 @@
+// day?night
+function dayMode() {
+  document.body.style.background = "whitesmoke";
+}
+function nightMode() {
+  document.body.style.background = "black";
+  document.body.style.color = "white";
+}
+
 // marksheet
 let markInput = document.querySelector(".mark_input");
 let findGradeBtn = document.querySelector(".find_grade_btn");
@@ -171,3 +180,29 @@ let x = setInterval(() => {
   dateCountDown();
 }, 1000);
 // count down timer
+
+// type writter
+let type = document.querySelector(".type");
+typeText = type.innerHTML;
+typeArr = typeText.split("");
+type.innerHTML = "";
+let typing = 0;
+
+function typeJs() {
+  if (typing < typeText.length) {
+    type.innerHTML += typeText.charAt(typing);
+    typing++;
+  } else {
+    typeArr.pop();
+    type.innerHTML = typeArr.join("");
+    if (typeArr.length == 0) {
+      typing = 0;
+      typeArr = typeText.split("");
+    }
+  }
+}
+// setInterval(function () {
+//   typeJs();
+// }, 200);
+setInterval(typeJs, 200);
+// type writter
